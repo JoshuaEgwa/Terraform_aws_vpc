@@ -101,6 +101,6 @@ resource "aws_instance" "dev_server" {
 
 resource "aws_key_pair" "dev_key" {
   key_name   = "devkey1"
- public_key = file("C:/Users/roger/Documents/devkey1.pub")
+ public_key = file("${path.module}/devkey1.pub")
 
 }
